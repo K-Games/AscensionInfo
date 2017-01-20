@@ -2,6 +2,77 @@
 
 ![Game Updates](https://github.com/kenofnz/AscensionInfo/raw/master/images/updates.png)
 
+## Version 0.23
+
+### Gameplay Changes
+* New mechanic - Hyper Stance - Certain Skills grants players with Hyper Stance, preventing and removing Knockback and Stun debuffs.
+* Fixed Bombardment particle effect not matching actual duration.
+* Players are now drawn on top on their respective screens.
+* Fixed rare bug where screen would translate incorrectly and become stuck.
+
+#### Stats
+* Stat Points per Level increased from 7 to 15.
+* Armor
+	* Damage Reduction from Armor has been changed from Armor/(Armor + 150) to Armor/(Armor + 175)
+		* This means players take more damage overall.
+* Regen(HP/Sec)
+	* Regen increased from 1.5 per Spirit to 60 + 3.4 per Spirit.
+
+#### Equipment Stats
+* Regen(HP/Sec)
+	* New Equip roll increased from (level + roll(3)) * 5 to (level + roll(3)) * 10
+		* Existing Equipments are not updated.
+
+#### Infusion
+* Upgrades renamed to Infusion.
+* Tome of Enhancements renamed to Soul Stones.
+* Equipment can now be enhanced with up to 3 Soul Stones.
+	* Using more than 1 Soul Stone will use the highest level Soul Stone as the base level.
+	* Each additional Soul Stone adds a level to the base.
+* Rescaled upgrade bonus Power, Defense, and Spirit stats from 4% + 0.75 per upgrade to a flat 1.25 per upgrade.
+* Reduced upgrade Armor bonus from 24 to 18 per upgrade.
+* Increased upgrade HP/Sec bonus from 8 to 10 per upgrade.
+* Increased upgrade HP/Sec internal multiplier from 1 + Rarity Multiplier to 2 + Rarity Multiplier
+* Increased Critical Hit Chance internal multiplier factor - The internal multiplier now provides twice as much.
+* Upgrade Power, Defense, Spirit, Armor and HP/Sec bonuses are now multiplied by the internal multipler.
+	* These changes means that lower level equipment with extremely high amounts of upgrades are no longer significantly better than higher level equipments with upgrades.
+	* Lower level equipment will now achieve the same stats as higher level equipments with equivalent amount of upgrades.
+
+| Level 1 Equip | Level 50 Equivalent | Level 99 Equivalent | Level 100 Equivalent |
+| --- | --- | --- | --- |
+| Lvl 1 +99 Upgrades | Lvl 50 +50 Upgrades | Lvl 99 +1 Upgrade | Lvl 100 No Upgrades |
+| Lvl 1 +100 Upgrades | Lvl 50 +51 Upgrades | Lvl 99 +2 Upgrades | Lvl 100 +1 Upgrade |
+| Lvl 1 +101 Upgrades | Lvl 50 +52 Upgrades | Lvl 99 +3 Upgrades | Lvl 100 +2 Upgrades |
+| Lvl 1 +102 Upgrades | Lvl 50 +53 Upgrades | Lvl 99 +5 Upgrades | Lvl 100 +3 Upgrades |
+| Lvl 1 +103 Upgrades | Lvl 50 +54 Upgrades | Lvl 99 +6 Upgrades | Lvl 100 +4 Upgrades |
+
+* Divine Equipment Tier removed - Is not possible to attain with upgrade changes.
+
+#### Skill Changes
+
+##### Sword
+* Rend
+	* Damage increased from 100% + 4% per level to 100% + 6% per level.
+* Aggression
+	* Max Level Bonus - Grants Hyper Stance.
+* Vorpal Strike
+	* No longer removes debuffs.
+	* Grants Hyper Stance.
+
+##### Bow
+* Cannon Fire
+	* Max Level Bonus - Grants Hyper Stance.
+
+### Client Changes
+* Exposed CUSTOM_VALUES to allow fetching custom data of Skills.
+* Fixed main hand and offhand equip slot string.
+
+### Server Changes
+* Packets are now sent in large batches and asynchronously.
+* Improved network performance allows rooms to have up to 128 players.
+
+---
+
 ## Version 0.22 Update 1
 
 ### Gameplay Changes
