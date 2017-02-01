@@ -1,8 +1,46 @@
-![Ascension](https://github.com/kenofnz/Ascension/raw/master/Ascension/resources/sprites/ui/menu/title.png)
+![{Soul}Ascension](https://github.com/kenofnz/Ascension/raw/master/Ascension/resources/sprites/ui/menu/title.png)
 
 ![Game Updates](https://github.com/kenofnz/AscensionInfo/raw/master/images/updates.png)
 
-## Version 0.23
+## Version 0.23.1
+
+### Gameplay Changes
+
+#### Skill Changes
+
+#### Stats
+* Damage
+	* Damage formula changed to have lower variance.
+		* Average damage remains the same.
+
+##### Sword
+* Blade Flurry
+	* Damage increased from 75% + 3% per level to 85% + 3% per level.
+	* Level 30 Bonus - HP restored increased from 0.25% per hit to 0.75% per hit.
+* Rend
+	* Damage reduced from 100% + 6% per level to 100% + 5% per level.
+
+##### Utility
+* Fortify renamed to Adrenaline
+	* Increases movement speed by 60% + 0.5% per level.
+	* Increased damage reduction from 1% + 0.5% per level to 5% + 0.7% per level.
+
+### Client Changes
+* Ingame Damage numbers now distinguishes Critical Hits received with larger font and "!" - the same format as dealing a Critical Hit.
+* Ingame Damage numbers colours have been changed for visual clarity.
+* Ingame Damage numbers movement path changed from vertical to falling curve.
+* Fixed player jitter when there are a lot of players on screen.
+* Fixed particle keys not being cleaned up correctly.
+* Fixed minor memory leak with Equipment Icons.
+* Screen shakes adjusted.
+* New particle effect when damage is dealt.
+* Separated base and bonus Primary Stats data sent to server.
+
+### Server Changes
+
+---
+
+## Version 0.23.0
 
 ### Gameplay Changes
 * New mechanic - Hyper Stance - Certain Skills grants players with Hyper Stance, preventing and removing Knockback and Stun debuffs.
@@ -73,7 +111,7 @@
 
 ---
 
-## Version 0.22 Update 1
+## Version 0.22.1
 
 ### Gameplay Changes
 
@@ -133,7 +171,7 @@
 
 ---
 
-## Version 0.22 Release
+## Version 0.22.0
 
 ### Gameplay Changes
 * Equipment icons now show its Tier colour.
@@ -169,7 +207,7 @@
 
 ---
 
-## Version 0.21 Release
+## Version 0.21.0
 
 ### Gameplay Changes
 * Movement speed reduced from 4.5 to 3.8.
@@ -244,7 +282,7 @@
 
 ---
 
-## Version 0.20 Update 2
+## Version 0.20.2
 
 ### Gameplay Changes
 * Lowered Maximum Armor roll for new Rings.
@@ -271,7 +309,7 @@
 
 ---
 
-## Version 0.20 Update 1
+## Version 0.20.1
 
 ### Gameplay Changes
 * Added Emotes. Assign a key to use the Emotes in the Keybind menu.
@@ -294,7 +332,7 @@
 
 ---
 
-## Version 0.20 Release
+## Version 0.20.0
 
 ### Gameplay Changes
 * Some skills now have screen shake when dealing damage.
@@ -319,7 +357,7 @@
 
 ---
 
-## Version 0.19 Release
+## Version 0.19.0
 
 ### Gameplay Changes
 * Players can now control their direction in midair.
@@ -345,7 +383,7 @@
 
 ---
 
-## Version 0.18 Update 2
+## Version 0.18.2
 
 ### Client Changes
 * Critical hit damage in the Stats screen now match with the Inventory screen.
@@ -355,7 +393,7 @@
 
 ---
 
-## Version 0.18 Update 1
+## Version 0.18.1
 
 ### Gameplay Changes
 * Passives Removed: Tactical Execution
@@ -397,7 +435,7 @@
 
 ---
 
-## Version 0.18 Release
+## Version 0.18.0
 
 ### Client Changes
 * Minor adjustments to sound effects.
@@ -425,7 +463,7 @@
 
 ---
 
-## Version 0.17 Update 1
+## Version 0.17.1
 
 ### Client Changes
 * Fixed loading into map before loading completed.
@@ -446,7 +484,7 @@
 
 ---
 
-## Version 0.17 Release
+## Version 0.17.0
 
 ### Client Changes
 * Added Debug Mode - Currently displays some hidden values in the menu.
@@ -466,7 +504,7 @@
 
 ---
 
-## Version 0.16 Update 18
+## Version 0.16.18
 
 ### Client Changes
 * Renamed Global PLAYER_STATE constants to PLAYER_ANIM_STATE
@@ -487,7 +525,7 @@
 
 ---
 
-## Version 0.16 Update 17
+## Version 0.16.17
 
 ### Client Changes
 * Abstracted Particle Loading.
