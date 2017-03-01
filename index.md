@@ -1,6 +1,45 @@
 ![{Soul}Ascension](https://github.com/kenofnz/Ascension/raw/master/Ascension/resources/sprites/ui/menu/title.png)
 
-![Game Updates](https://github.com/kenofnz/AscensionInfo/raw/master/images/updates.png)
+![Game Updates](https://github.com/K-Games/AscensionInfo/raw/master/images/updates.png)
+
+## Version 0.23.2
+
+### Gameplay Changes
+* New Map - Grand Library - A large asymmetrical map.
+	* 2 new background tracks.
+* Games are now 5 minute matches.
+	* Matches start when a player enters a new room.
+	* First to 30 kills to win.
+	* If a match ends by timeout, player with highest kill count is considered the winner.
+	* Tied games are allowed.
+	* Rewards are given according to placement.
+		* First - 3x Equipment + 20% EXP to next level.
+		* Second - 2x Equipment + 15% EXP to next level.
+		* Third - 1x Equipment + 10% EXP to next level.
+		* No Placement - 10% EXP to next level.
+* New emotes added - `Well Played!` and `GG`
+* Players now have colour associated with them. 
+	* Scoreboard and Kill notifications will have matching colours for quick readability.
+	* Player colour is shown next to player's name.
+	
+### Client Changes
+* Added Scoreboard - Existing key binds will not have open Scoreboard binded.
+* Improved player name visibilty with a dark background.
+* Ingame Damage numbers are now formatted for easier readability.
+* Ingame Damage number position is now relative to screen space instead of relative to damage location.
+* Update some skill descriptions.
+* Fixed rare bug where Adrenaline particle would cause everything to render transparently.
+* New key bind settings default to "Not Assigned".
+* Implemented multi-layered parallax backgrounds.
+
+### Server Changes
+* Fixed server not sending info to Hub when unable to retrieve country/area name.
+* Added Win Condition
+	* Default is 5 minute match, first to 30 kills to win.
+	* If a match ends by timeout, player with highest kill count is considered the winner.
+* Added impassable platforms - Platforms can be flagged as solid to prevent players from moving through it.
+
+---
 
 ## Version 0.23.1
 
