@@ -2,6 +2,76 @@
 
 ![Game Updates](https://github.com/K-Games/AscensionInfo/raw/master/images/updates.png)
 
+## Version 0.24.0
+
+### Gameplay Changes
+* Notifications
+	* Stay on screen for longer.
+	* Kill notifications now only show colour of the killing player.
+* Players' level difference in a match is now at most 5 levels apart.
+	* A match's level group was previously divided by levels in 10s(1-10, 11-20, etc).
+* Matches are now joinable only if the match has at least 90 seconds remaining.
+	* Previously was 5 seconds remaining.
+* Damage Numbers
+	* Stay on screen for longer.
+	* Improved movement to be smoother.
+* Particles
+	* Improved some particles to animate smoother.
+* Barrier & Resistance Passive bugfix
+	* Fixed passives not working after one instance.
+* Drops
+	* Item icon is shown briefly on the player when getting an item drop.
+
+#### Stats
+* Armour
+	* Damage Reduction from Armour lowered from Armour/(Armour + 175) to Armour/(Armour + 300)
+
+#### Infusion
+* Divine Tier renamed to Ascended Tier.
+* Ascended Tier is now attainable only through infusions.
+	* Ascended Tier is granted when an equipment meet one of the following conditions.
+		* Equipment with at least Mystic Tier with +10 infusions.
+		* Any equipment with +20 infusions.
+* Soul Stones can now be sorted by their level in descending order (highest to lowest).
+
+#### Skill Changes
+
+##### Sword
+* Phantom Reaper
+	* Decreased number of hits from 5 + 1 per 2 levels to 5.
+	* Damager increased from 75% + 2% per level  to 75% + 20% per level.
+	* Player will now alternate sides when teleporting.
+	* These changes make Phantom Sword more consistent in damage and positioning.
+
+##### Utility
+* Adrenaline
+	* Movement Speed bonus decreased from 60% + 0.5% per level to 20% + 0.5% per level.
+	* Cooldown increased from 12 to 24 seconds
+
+### Client Changes
+* Centralised all threads into Core class.
+* Improved code for legacy and future SaveData data structure.
+* New SaveData data structure.
+* Disassociated an item's Equipment Slot and Equipment Tab from its Equipment Type.
+* Added match objective reminder under match timer.
+* Client logic is updated more frequently to match framerate.
+* Enabled window scaling - Not officially supported.
+	* Use -scale launch option to scale window size.
+	
+### Server Changes
+* Added Core class for centralised threads.
+* Room's level range is now determined by the creating player's level.
+* Server Configuration
+	* Removed unused properties for old thread configs.
+	* Added new properties for Shared Threadpools.
+	* Added new property for Room Level Difference value.
+	* Added new property for Minimum Time Remaining for a room to be joinable.
+	* Added new property for Equip and Infusion Drop Rates.
+* Sending AnimState data now includes position data to fix minor client visual bug.
+* Fixed unable to connect to Hub when Hub is restarted after server previously connected to it.
+
+---
+
 ## Version 0.23.2
 
 ### Gameplay Changes
@@ -89,8 +159,8 @@
 
 #### Stats
 * Stat Points per Level increased from 7 to 15.
-* Armor
-	* Damage Reduction from Armor has been changed from Armor/(Armor + 150) to Armor/(Armor + 175)
+* Armour
+	* Damage Reduction from Armour has been changed from Armour/(Armour + 150) to Armour/(Armour + 175)
 		* This means players take more damage overall.
 * Regen(HP/Sec)
 	* Regen increased from 1.5 per Spirit to 60 + 3.4 per Spirit.
@@ -107,11 +177,11 @@
 	* Using more than 1 Soul Stone will use the highest level Soul Stone as the base level.
 	* Each additional Soul Stone adds a level to the base.
 * Rescaled upgrade bonus Power, Defense, and Spirit stats from 4% + 0.75 per upgrade to a flat 1.25 per upgrade.
-* Reduced upgrade Armor bonus from 24 to 18 per upgrade.
+* Reduced upgrade Armour bonus from 24 to 18 per upgrade.
 * Increased upgrade HP/Sec bonus from 8 to 10 per upgrade.
 * Increased upgrade HP/Sec internal multiplier from 1 + Rarity Multiplier to 2 + Rarity Multiplier
 * Increased Critical Hit Chance internal multiplier factor - The internal multiplier now provides twice as much.
-* Upgrade Power, Defense, Spirit, Armor and HP/Sec bonuses are now multiplied by the internal multipler.
+* Upgrade Power, Defense, Spirit, Armour and HP/Sec bonuses are now multiplied by the internal multipler.
 	* These changes means that lower level equipment with extremely high amounts of upgrades are no longer significantly better than higher level equipments with upgrades.
 	* Lower level equipment will now achieve the same stats as higher level equipments with equivalent amount of upgrades.
 
@@ -324,7 +394,7 @@
 ## Version 0.20.2
 
 ### Gameplay Changes
-* Lowered Maximum Armor roll for new Rings.
+* Lowered Maximum Armour roll for new Rings.
 * Knockback no longer disables Skill casting.
 * Firebrand - Range increased from 170 to 280
 * Aggression - Buff duration decreased from 10 seconds to 5 seconds.
