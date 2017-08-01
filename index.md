@@ -2,6 +2,20 @@
 
 ![Game Updates](https://github.com/K-Games/AscensionInfo/raw/master/images/updates.png)
 
+## Version 0.24.2
+
+### Gameplay Changes
+
+#### Skill Changes
+
+##### Bow
+* Rapid Fire
+	* Knockback no longer stops jump momentum.
+* Arc Shot
+	* Knockback no longer stops jump momentum.
+	
+---
+
 ## Version 0.24.1
 
 ### Client Changes
